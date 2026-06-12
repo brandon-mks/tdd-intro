@@ -56,6 +56,7 @@ export function makes10(num1, num2) {
  * near100(105, 10); // true
  */
 export function near100(n, distance) {
+  //i think i overcomplicated this? apologies if so...
   if (n === 100) {
     return true;
   } else if (Math.sign(100 - n) === -1) {
@@ -92,7 +93,11 @@ export function near100(n, distance) {
  * isMultiple35(7); // false
  */
 export function isMultiple35(n) {
-  /* TODO */
+  if (n % 3 == 0 || n % 5 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
