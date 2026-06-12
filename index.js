@@ -32,7 +32,13 @@ export function sumDouble(num1, num2) {
  * makes10(4, 4); // false
  */
 export function makes10(num1, num2) {
-  /* TODO */
+  if (num1 == 10 || num2 == 10) {
+    return true;
+  } else if (num1 + num2 == 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
