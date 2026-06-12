@@ -56,7 +56,26 @@ export function makes10(num1, num2) {
  * near100(105, 10); // true
  */
 export function near100(n, distance) {
-  /* TODO */
+  if (n === 100) {
+    return true;
+  } else if (Math.sign(100 - n) === -1) {
+    //checking if difference between 100 and n is negative
+    //if yes it converts it back into a positive integer
+    //then checks to see if that number is less than distance
+    if ((100 - n) * -1 <= distance) {
+      return true;
+    } else {
+      return false;
+    }
+    //if diff between n and 100 is positive, it simply checks
+    //to see if the difference is less than distance
+  } else if (Math.sign(100 - n) === 1) {
+    if (100 - n <= distance) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 /**
