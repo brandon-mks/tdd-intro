@@ -100,7 +100,13 @@ export function isMultiple35(n) {
  * @example
  * shareLastDigit(10, 21); // false
  */
-export function shareLastDigit(num1, num2) {}
+export function shareLastDigit(num1, num2) {
+  if (Math.abs(num1) % 10 == Math.abs(num2) % 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /**
  * @param {number} temp1 - First temperature.
