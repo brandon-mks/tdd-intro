@@ -163,7 +163,11 @@ export function makeABBA(A, B) {
  * makeSLS("a", "abc"); // "aabca"
  */
 export function makeSLS(str1, str2) {
-  /* TODO */
+  if (str1.length > str2.length) {
+    return str2 + str1 + str2;
+  } else {
+    return str1 + str2 + str1;
+  }
 }
 
 /**
